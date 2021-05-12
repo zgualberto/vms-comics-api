@@ -66,8 +66,6 @@ class MigrateCommand extends Command
         $bar = $this->output->createProgressBar(count($dataAuthor['data']['results']));
         $bar->start();
         foreach ($dataAuthor['data']['results'] as $value) {
-
-            $authors = 
             $dataAuthorStore = [
                 'first_name' => $value['firstName'],
                 'last_name' => $value['lastName'],
